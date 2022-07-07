@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Be better</string>
+    <string name="bigText">DON\'T SWEAR</string>
+    <string name="total">Total amount of curses</string>
+    <string name="totalBless">Total amount of curseless days</string>
+    <string name="add">ADD</string>
+    <string name="sub">SUB</string>
+    <string name="tot_0">0</string>
+    <string name="cursesBegin">\"Amount of curses by \"</string>
+    <string name="of">\" of \"</string>
+    <string name="snacksToBuy">\":\nSnacks to buy: \"</string>
+    <string name="PushUps">\"\nPush-ups to do: \"</string>
+    <string name="blessBegin">\"Amount of blesses by \"</string>
+    <string name="Goods">\":\nGoods to acquire: \"</string>
+</resources>
