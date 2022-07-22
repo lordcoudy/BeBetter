@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/settingTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#6667A6"
+            android:gravity="center"
+            android:text="@string/settingText"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/curseSettingTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_weight="0"
+            android:padding="10sp"
+            android:text="@string/Penalty"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/curseInputTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="20sp"
+            app:boxCornerRadiusBottomStart="20sp"
+            app:boxCornerRadiusTopEnd="20sp"
+            app:boxCornerRadiusTopStart="20sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/curseInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:hint="@string/Hint"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/blessSettingTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_weight="0"
+            android:padding="10sp"
+            android:text="@string/BigPenalty"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/blessInputTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="20sp"
+            app:boxCornerRadiusBottomStart="20sp"
+            app:boxCornerRadiusTopEnd="20sp"
+            app:boxCornerRadiusTopStart="20sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/blessInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:hint="@string/Hint"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100sp"
+            android:layout_marginVertical="10sp"
+            android:layout_weight="1"
+            android:onClick="Save"
+            android:text="@string/save"
+            app:cornerRadius="100sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
